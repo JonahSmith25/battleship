@@ -44,7 +44,7 @@
         </properties>
     </rule>
 
-<!--    https://github.com/skiadas/battleship/issues/87#issue-2830964061 -->
+<!--    https://github.com/skiadas/battleship/issues/87#issue-2830964061  -->
     <rule ref="category/java/codestyle.xml/ShortClassName">
         <properties>
             <property name="minimum" value="4" />

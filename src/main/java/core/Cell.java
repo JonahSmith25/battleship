@@ -2,7 +2,19 @@
 package core;
 
 public class Cell {
+    /**
+     * Boolean value shot denotes if a cell has been shot.
+     * If false, it has not been shot. If true, it has been shot.
+     * ref# 81 https://github.com/skiadas/battleship/issues/81#issue-2828172112
+     * @author Jonah Smith
+     */
     private boolean shot;
+    /**
+     * Boolean value ship denotes if a cell houses part of a ship.
+     * If false, it is empty. If true, it houses part of a ship.
+     * ref# 81 https://github.com/skiadas/battleship/issues/81#issue-2828172112
+     * @author Jonah Smith
+     */
     private boolean ship;
 
     public Cell() {

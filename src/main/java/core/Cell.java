@@ -1,6 +1,11 @@
 // Raihan and Jonah
 package core;
 
+/**
+ * objects used as spaces on grid
+ * ref# 73 https://github.com/skiadas/battleship/issues/73#issue-2824091429
+ * Raihan
+ */
 public class Cell {
     /**
      * denotes if a cell has been shot.

@@ -76,7 +76,11 @@ public class Cell {
         this.shot = true;
     }
 
-    // Place a ship in the cell
+    /**
+     *place a ship in a cell
+     * ref# 94 https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author Jonah
+     */
     public void setAsShip() {
         this.ship = true;
     }

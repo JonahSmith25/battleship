@@ -20,6 +20,11 @@ public class Cell {
      */
     private boolean ship;
 
+    /**
+     * Creates a default cell object that has not been shot and does not contain a ship
+     * ref# 94 https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author Jonah
+     */
     public Cell() {
         this.shot = false;
         this.ship = false;

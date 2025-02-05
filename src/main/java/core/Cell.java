@@ -34,7 +34,11 @@ public class Cell {
         this.ship = ship;
         this.shot = false;
     }
-
+    /**
+     *returns true if cell does not contain a ship
+     * ref# 94 https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author Jonah
+     */
     public boolean isEmpty() {
         return !this.hasShip();
     }

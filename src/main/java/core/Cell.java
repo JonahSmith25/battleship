@@ -29,7 +29,12 @@ public class Cell {
         this.shot = false;
         this.ship = false;
     }
-
+    /**
+     * Creates a cell with the specified ship presence.
+     *  @param ship {@code true} if the cell contains a ship, {@code false} otherwise.
+     * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author mdhamimraihan
+     */
     public Cell(boolean ship) {
         this.ship = ship;
         this.shot = false;
@@ -43,7 +48,13 @@ public class Cell {
         return !this.hasShip();
     }
 
-    // the cell has been shot
+    /**
+     * Checks if the cell has been shot.
+     *
+     * @return {@code true} if the cell has been shot, {@code false} otherwise.
+     * * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author mdhamimraihan
+     */
     public boolean hasBeenShot() {
         return this.shot;
     }
@@ -57,7 +68,13 @@ public class Cell {
         return this.ship;
     }
 
-    // the shot on this cell resulted in a hit
+    /**
+     * Determines if the shot on this cell resulted in a hit.
+     *
+     * @return {@code true} if the cell has been shot and contains a ship, {@code false} otherwise.
+     * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     *@author mdhamimraihan
+     */
     public boolean cellIsHit() {
         return this.hasBeenShot() && this.hasShip();
     }
@@ -71,7 +88,11 @@ public class Cell {
         return this.hasBeenShot() && !this.hasShip();
     }
 
-    // Mark the cell as shot
+    /** Mark the cell as shot
+
+     * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     *@author mdhamimraihan
+     */
     public void setAsShot() {
         this.shot = true;
     }
@@ -84,7 +105,11 @@ public class Cell {
     public void setAsShip() {
         this.ship = true;
     }
-
+    /**
+     *Marks the cell as a hit, meaning it has been shot and contains a ship.
+     * * * * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     *      ** @author mdhamimraihan
+     */
     public void setAsHit() {
         this.ship = true;
         this.shot = true;
@@ -99,7 +124,11 @@ public class Cell {
         this.ship = false;
     }
 
-    // Reset the cell to its initial state
+    /**
+     * Resets the cell to its initial state (no ship, not shot).
+     * * * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     ** @author mdhamimraihan
+     */
     public void reset() {
         this.shot = false;
         this.ship = false;

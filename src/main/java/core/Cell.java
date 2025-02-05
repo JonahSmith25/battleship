@@ -62,7 +62,11 @@ public class Cell {
         return this.hasBeenShot() && this.hasShip();
     }
 
-    // shot on this cell resulted in a miss
+    /**
+     *shot on cell resulted in a miss
+     * ref# 94 https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author Jonah
+     */
     public boolean cellIsMiss() {
         return this.hasBeenShot() && !this.hasShip();
     }

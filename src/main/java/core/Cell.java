@@ -48,7 +48,11 @@ public class Cell {
         return this.shot;
     }
 
-    // the cell contains a ship
+    /**
+     *returns true if cell contains a ship
+     * ref# 94 https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author Jonah
+     */
     public boolean hasShip() {
         return this.ship;
     }

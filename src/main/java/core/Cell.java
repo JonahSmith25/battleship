@@ -89,7 +89,11 @@ public class Cell {
         this.ship = true;
         this.shot = true;
     }
-
+    /**
+     * Marks cell as a missed shot
+     * ref# 94 https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author Jonah
+     */
     public void setAsMiss() {
         this.shot = true;
         this.ship = false;
